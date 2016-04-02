@@ -11,4 +11,4 @@ elif [[ "$docker_instance" == *"Running"* ]]; then
     eval "$(docker-machine env coderdojochi-dev)"
 fi
 
-docker exec -it docker_app_1 python manage.py $@
+docker exec -it coderdojochi_app_1 python manage.py $@
